@@ -1,0 +1,63 @@
+.slider1,.slider2,.slider3,.slider4,.slider5{
+    width: 90%;
+    margin: 0 auto;
+    position: absolute;
+    height: 90%;
+}
+.slider1{ animation: fade1 20s infinite;}
+.slider2{ animation: fade2 20s infinite;}
+.slider3{ animation: fade3 20s infinite;}
+.slider4{ animation: fade4 20s infinite;}
+.slider5{ animation: fade5 20s infinite;}
+
+@keyframes fade1{
+    0%{opacity: 1;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
+@keyframes fade2{
+    0%{opacity: 0;}
+    25%{opacity: 1;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade3{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 1;}
+    75%{opacity: 0;}
+    100%{opacity: 0;}
+}
+@keyframes fade4{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 1;}
+    100%{opacity: 0;}
+}
+@keyframes fade5{
+    0%{opacity: 0;}
+    25%{opacity: 0;}
+    50%{opacity: 0;}
+    75%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+/***********
+For Responsive Design
+***********/
+@media screen and (max-width:425px){
+    .slider1,.slider2,.slider3,.slider4,.slider5{
+        height: 50%;
+    }   
+}
+
+/* for ipod */
+@media screen and (max-width: 768px) and (max-height: 1024px), (max-width: 1024px) and (max-height: 1366px){
+    .slider1,.slider2,.slider3,.slider4,.slider5{
+        height: 60%;
+    }
+}
